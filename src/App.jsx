@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Map from './components/map'
 import Chart from './components/Chart'
 import Live from './components/Live'
+import Set from './components/Set'
+import Get from './components/Get'
 import './App.css'
 
 function App() {
@@ -12,6 +14,9 @@ function App() {
       <hr />
       <Map />
       <Live />
+      <hr />
+      <Set /> 
+      <Get />
     </>
   )
 }

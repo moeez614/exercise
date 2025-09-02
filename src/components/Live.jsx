@@ -2,11 +2,13 @@ import React,{ useState} from 'react'
 
 const Live = () => {
     const [location, setLocation] = useState(null);
-
+console.log(navigator.userAgent)
     const getLocation = () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
+                    console.log(position);
+                    
                     setLocation({
                         lat: position.coords.latitude,
                         lng: position.coords.longitude,
